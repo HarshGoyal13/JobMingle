@@ -21,11 +21,13 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
+const URL = process.env.URL
 
 const corsOptions = {
-    origin:'http://localhost:5173',
+    origin:URL,
     credentials:true
 }
+console.log(URL)
 
 app.use(cors(corsOptions));
 

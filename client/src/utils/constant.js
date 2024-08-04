@@ -1,5 +1,5 @@
 
-const baseurl = import.meta.env.VITE_BASE_URL;
+const baseurl = "https://jobmingle-y7jf.onrender.com/api/v1";
 
 
 
