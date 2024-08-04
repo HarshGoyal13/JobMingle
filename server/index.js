@@ -27,7 +27,7 @@ const corsOptions = {
     origin:URL,
     credentials:true
 }
-console.log(URL)
+console.log(process.env.URL)
 
 app.use(cors(corsOptions));
 
